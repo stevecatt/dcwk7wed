@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/style.css"></link>
+</head>
+<body>
+
+
+<div id="mainmovieID" >
+{{#movie}}
+<h1>{{title}}</h1>
+<span>{{genre}}</span>
+<p>{{description}}</p>
+<img src={{imageUrl}}>
+<form action="/movies/return" method="POST">
+<input type="hidden" name="id" value= {{id}}>
+<button type="submit">Return to  Movies</button>
+</form>
+{{/movie}}
+
+
+</div>
+
+
+</body>
+</html>
